@@ -1,0 +1,135 @@
+body {
+  position: relative;
+  background-color: black;
+  color: darkgray;
+  font-family: de-walpergens-pica, serif;
+  padding: 1em;
+  z-index: -2;
+}
+
+h1 {
+  font-variant: small-caps;
+}
+
+.controls ul {
+  z-index: 1;
+}
+
+.controls li {
+  font-size: 1.5em;
+  list-style-type: none;
+}
+
+.controls .control {
+  color: red;
+  padding: 0;
+  background-color: black;
+  border: none;
+}
+
+.value {
+  color: white;
+  margin-left: 6px;
+}
+
+button#reset {
+  background-color: black;
+  border: 1px solid darkred;
+  border-radius: 6px;
+  color: darkred;
+  margin-top: 8px;
+}
+
+a, button {
+  outline: 0;
+}
+
+a:focus, a:active, 
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline : 0;
+}
+
+#diabolical-display {
+  margin-top: -40px;
+  position: relative;
+  z-index: -1;
+}
+
+#pentagram {
+  margin: 0 auto;
+  height: 500px;
+  width: 500px;
+  border-radius: 500px;
+  border: 5px solid #330000;
+  position: relative;
+}
+
+#pentagram div {
+  position: absolute;
+  background: #330000;
+  width: 476px;
+  height: 5px;
+}
+
+#star_1 {
+  top: 324px;
+  left: 7px;
+}
+
+#star_2 {
+  top: 180px;
+  left: -40px;
+  transform: rotate(-37deg);
+}
+
+#star_3 {
+  top: 183px;
+  right: -40px;
+  transform: rotate(37deg);
+}
+
+#star_4 {
+  top: 265px;
+  right: -65px;
+  width: 480px !important;
+  transform: rotate(107deg);
+}
+
+#star_5 {
+  top: 265px;
+  left: -65px;
+  width: 480px !important;
+  transform: rotate(-107deg);
+}
+
+#countdown {
+  font-size: 3em;
+  position: absolute;
+  top: 200px;
+  left: 148px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  z-level: 20;
+}
+
+#countdown a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.pulsing {
+  animation: pulse linear 3s infinite;
+}
+
+@keyframes pulse {
+  0% { text-shadow: none; }
+  50% { text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff; }
+  100% { text-shadow: none; }
+}

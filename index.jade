@@ -1,0 +1,30 @@
+h1 &#9959;ountdown to &#9959;haos
+
+div(class='controls')
+  ul
+    li Duration 
+      button(class='duration control')
+        | - 
+      button(class='duration control')
+        | + 
+      span(class='value', id='duration')
+        | 25
+    li Break 
+      button(class='break control')
+        | - 
+      button(class='break control')
+        | + 
+      span(class='value', id='break')
+        | 5
+    li
+      button(id='reset') Reset
+      
+section(id='diabolical-display')
+  div(id='pentagram')
+    main(class='pulsing', id='countdown')
+      a(href='#') 0:25:00
+    div(id='star_1')
+    div(id='star_2')
+    div(id='star_3')
+    div(id='star_4')
+    div(id='star_5')
